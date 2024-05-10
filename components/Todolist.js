@@ -79,56 +79,56 @@ const ToDoList = () => {
       <TextInput
         style={styles.input}
         placeholder="Task"
-        placeholderTextColor="#999999"
+        placeholderTextColor="#1E0342"
         value={todo.todo}
         onChangeText={(text) => handleInputChange("todo", text)}
       />
       <TextInput
         style={styles.input}
         placeholder="Task Description"
-        placeholderTextColor="#999999"
+        placeholderTextColor="#1E0342"
         value={todo.name}
         onChangeText={(text) => handleInputChange("name", text)}
       />
       <TextInput
         style={styles.input}
         placeholder="Complete Name"
-        placeholderTextColor="#999999"
+        placeholderTextColor="#1E0342"
         value={todo.schoolId}
         onChangeText={(text) => handleInputChange("schoolId", text)}
       />
       <TextInput
         style={styles.input}
         placeholder="Student ID"
-        placeholderTextColor="#999999"
+        placeholderTextColor="#1E0342"
         value={todo.sectionCode}
         onChangeText={(text) => handleInputChange("sectionCode", text)}
       />
       <TextInput
         style={styles.input}
         placeholder="Course"
-        placeholderTextColor="#999999"
+        placeholderTextColor="#1E0342"
         value={todo.courseDescription}
         onChangeText={(text) => handleInputChange("courseDescription", text)}
       />
       <TextInput
         style={styles.input}
         placeholder="Academic Year"
-        placeholderTextColor="#999999"
+        placeholderTextColor="#1E0342"
         value={todo.courseName}
         onChangeText={(text) => handleInputChange("courseName", text)}
       />
       <TextInput
         style={styles.input}
         placeholder="Remarks"
-        placeholderTextColor="#999999"
+        placeholderTextColor="#1E0342"
         value={todo.academicYear}
         onChangeText={(text) => handleInputChange("academicYear", text)}
       />
       {/* Add more TextInput components for other fields if needed */}
 
       <TouchableOpacity
-        style={[styles.button, { backgroundColor: "#0d5c63" }]}
+        style={[styles.button, { backgroundColor: "#1E0342" }]}
         onPress={submitTodo}
       >
         <Text style={styles.buttonText}>{editId ? "Update" : "Add"}</Text>
@@ -152,7 +152,7 @@ const ToDoList = () => {
             {!item.completed && (
               <View style={styles.buttonsContainer}>
                 <TouchableOpacity
-                  style={[styles.button, { backgroundColor: "#0d5c63" }]}
+                  style={[styles.button, { backgroundColor: "#1E0342" }]}
                   title="Edit"
                   onPress={() => handleEdit(item)}
                 >
@@ -160,7 +160,7 @@ const ToDoList = () => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                  style={[styles.button, { backgroundColor: "#0d5c63" }]}
+                  style={[styles.button, { backgroundColor: "#1E0342" }]}
                   title="Delete"
                   onPress={() => deleteTodo(item.id)}
                 >
@@ -168,7 +168,7 @@ const ToDoList = () => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                  style={[styles.button, { backgroundColor: "#0d5c63" }]}
+                  style={[styles.button, { backgroundColor: "#1E0342" }]}
                   title="Done"
                   onPress={() => handleDone(item.id)}
                 >
